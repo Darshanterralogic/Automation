@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.3 on win32)" generated="20230911 11:16:38.903" rpa="false" schemaversion="4">
+<suite id="s1" name="Automation project" source="C:\Users\Darshan MH-3216\PycharmProjects\Automation_project">
+<suite id="s1-s1" name="Testcases" source="C:\Users\Darshan MH-3216\PycharmProjects\Automation_project\Testcases">
+<suite id="s1-s1-s1" name="TC3 Time-off" source="C:\Users\Darshan MH-3216\PycharmProjects\Automation_project\Testcases\TC3_Time-off.robot">
+<test id="s1-s1-s1-t1" name="TC1_Login_Test" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${base_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230911 11:16:39.201" level="INFO">Opening browser 'Chrome' to base url 'http://127.0.0.1:8000/'.</msg>
+<status status="PASS" starttime="20230911 11:16:39.200" endtime="20230911 11:16:43.240"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230911 11:16:43.246" endtime="20230911 11:16:43.384"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230911 11:16:43.385" endtime="20230911 11:16:43.388"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="id_employee_id"]</arg>
+<arg>PSI-6789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:43.390" level="INFO">Typing text 'PSI-6789' into text field 'xpath://*[@id="id_employee_id"]'.</msg>
+<status status="PASS" starttime="20230911 11:16:43.389" endtime="20230911 11:16:43.677"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="id_email"]</arg>
+<arg>mh@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:43.680" level="INFO">Typing text 'mh@gmail.com' into text field 'xpath://*[@id="id_email"]'.</msg>
+<status status="PASS" starttime="20230911 11:16:43.679" endtime="20230911 11:16:43.993"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="id_password"]</arg>
+<arg>Darshan@1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:43.996" level="INFO">Typing text 'Darshan@1' into text field 'xpath://*[@id="id_password"]'.</msg>
+<status status="PASS" starttime="20230911 11:16:43.995" endtime="20230911 11:16:44.205"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div/div/div/div/div[2]/div/form/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:44.209" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div/div/div/div[2]/div/form/button'.</msg>
+<status status="PASS" starttime="20230911 11:16:44.207" endtime="20230911 11:16:47.143"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 11:16:50.146" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 11:16:47.144" endtime="20230911 11:16:50.147"/>
+</kw>
+<status status="PASS" starttime="20230911 11:16:39.199" endtime="20230911 11:16:50.152"/>
+</test>
+<test id="s1-s1-s1-t2" name="TC2_Dashboard_Open_Test" line="20">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="accordionSidebar"]/li[1]/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:50.169" level="INFO">Clicking element 'xpath://*[@id="accordionSidebar"]/li[1]/a/span'.</msg>
+<status status="PASS" starttime="20230911 11:16:50.166" endtime="20230911 11:16:50.530"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 11:16:53.532" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 11:16:50.531" endtime="20230911 11:16:53.534"/>
+</kw>
+<status status="PASS" starttime="20230911 11:16:50.159" endtime="20230911 11:16:53.537"/>
+</test>
+<test id="s1-s1-s1-t3" name="TC3_Add_Time-off_Test_PTO" line="24">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="accordionSidebar"]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:53.553" level="INFO">Clicking element 'xpath://*[@id="accordionSidebar"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20230911 11:16:53.550" endtime="20230911 11:16:53.773"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//a[@class='collapse-item'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:53.781" level="INFO">Clicking element 'xpath:(//a[@class='collapse-item'])[1]'.</msg>
+<status status="PASS" starttime="20230911 11:16:53.777" endtime="20230911 11:16:54.448"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://select[@class='form-control form-select']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:54.450" level="INFO">Clicking element 'xpath://select[@class='form-control form-select']'.</msg>
+<status status="PASS" starttime="20230911 11:16:54.448" endtime="20230911 11:16:54.516"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://option[@value='1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:54.517" level="INFO">Clicking element 'xpath://option[@value='1']'.</msg>
+<status status="PASS" starttime="20230911 11:16:54.517" endtime="20230911 11:16:54.559"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 11:16:57.560" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 11:16:54.560" endtime="20230911 11:16:57.561"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Dates"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:57.567" level="INFO">Clicking element 'xpath://*[@id="Dates"]'.</msg>
+<status status="PASS" starttime="20230911 11:16:57.564" endtime="20230911 11:16:57.894"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="page-top"]/div[3]/div[1]/table/tbody/tr[3]/td[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:16:57.899" level="INFO">Clicking element 'xpath://*[@id="page-top"]/div[3]/div[1]/table/tbody/tr[3]/td[2]'.</msg>
+<status status="PASS" starttime="20230911 11:16:57.895" endtime="20230911 11:16:58.116"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 11:17:01.119" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 11:16:58.118" endtime="20230911 11:17:01.120"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="subject"]</arg>
+<arg>Planned_Time_Off</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230911 11:17:01.128" level="INFO">Typing text 'Planned_Time_Off' into text field 'xpath://*[@id="subject"]'.</msg>
+<status status="PASS" starttime="20230911 11:17:01.125" endtime="20230911 11:17:01.488"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="Description"]</arg>
+<arg>For Personal Work</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230911 11:17:01.489" level="INFO">Typing text 'For Personal Work' into text field 'xpath://*[@id="Description"]'.</msg>
+<status status="PASS" starttime="20230911 11:17:01.489" endtime="20230911 11:17:01.578"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 11:17:04.579" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 11:17:01.578" endtime="20230911 11:17:04.580"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="content"]/div/div[2]/div/form/div/div[5]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:17:04.586" level="INFO">Clicking element 'xpath://*[@id="content"]/div/div[2]/div/form/div/div[5]/input'.</msg>
+<status status="PASS" starttime="20230911 11:17:04.583" endtime="20230911 11:17:04.909"/>
+</kw>
+<status status="PASS" starttime="20230911 11:16:53.544" endtime="20230911 11:17:04.912"/>
+</test>
+<test id="s1-s1-s1-t4" name="TC4_Add_Time-off_Test_Sick_Leave" line="39">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="accordionSidebar"]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:17:04.924" level="INFO">Clicking element 'xpath://*[@id="accordionSidebar"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20230911 11:17:04.921" endtime="20230911 11:17:05.081"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="collapseTwo"]/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:17:05.083" level="INFO">Clicking element 'xpath://*[@id="collapseTwo"]/div/a[1]'.</msg>
+<status status="PASS" starttime="20230911 11:17:05.082" endtime="20230911 11:17:05.335"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 11:17:08.336" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 11:17:05.335" endtime="20230911 11:17:08.336"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath:////*[@id="timeoff_type"]</arg>
+<arg>Sick Leave</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230911 11:17:08.340" level="INFO">Selecting options from selection list 'xpath:////*[@id="timeoff_type"]' by value Sick Leave.</msg>
+<msg timestamp="20230911 11:17:08.579" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230911 11:17:08.581" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression ////*[@id="timeoff_type"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '////*[@id="timeoff_type"]' is not a valid XPath expression.
+  (Session info: chrome=116.0.5845.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D64A52A2+57122]
+	(No symbol) [0x00007FF6D641EA92]
+	(No symbol) [0x00007FF6D62EE3AB]
+	(No symbol) [0x00007FF6D62F2382]
+	(No symbol) [0x00007FF6D62F3D2F]
+	(No symbol) [0x00007FF6D62F3E20]
+	(No symbol) [0x00007FF6D63279B1]
+	(No symbol) [0x00007FF6D6327E2C]
+	(No symbol) [0x00007FF6D6360B97]
+	(No symbol) [0x00007FF6D634701F]
+	(No symbol) [0x00007FF6D635EB82]
+	(No symbol) [0x00007FF6D6346DB3]
+	(No symbol) [0x00007FF6D631D2B1]
+	(No symbol) [0x00007FF6D631E494]
+	GetHandleVerifier [0x00007FF6D674EF82+2849794]
+	GetHandleVerifier [0x00007FF6D67A1D24+3189156]
+	GetHandleVerifier [0x00007FF6D679ACAF+3160367]
+	GetHandleVerifier [0x00007FF6D6536D06+653702]
+	(No symbol) [0x00007FF6D642A208]
+	(No symbol) [0x00007FF6D64262C4]
+	(No symbol) [0x00007FF6D64263F6]
+	(No symbol) [0x00007FF6D64167A3]
+	BaseThreadInitThunk [0x00007FFDFA5526AD+29]
+	RtlUserThreadStart [0x00007FFDFB56AA68+40]
+</msg>
+<status status="FAIL" starttime="20230911 11:17:08.338" endtime="20230911 11:17:08.599"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:08.601" endtime="20230911 11:17:08.602"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Dates"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:08.603" endtime="20230911 11:17:08.603"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:////*[@id="page-top"]/div[3]/div[1]/table/tbody/tr[3]/td[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:08.604" endtime="20230911 11:17:08.605"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:08.607" endtime="20230911 11:17:08.608"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="subject"]</arg>
+<arg>Sick_Leave</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:08.609" endtime="20230911 11:17:08.610"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="Description"]</arg>
+<arg>Health is not okay</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:08.611" endtime="20230911 11:17:08.612"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:08.613" endtime="20230911 11:17:08.614"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="content"]/div/div[2]/div/form/div/div[5]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:08.615" endtime="20230911 11:17:08.615"/>
+</kw>
+<status status="FAIL" starttime="20230911 11:17:04.916" endtime="20230911 11:17:08.617">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression ////*[@id="timeoff_type"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '////*[@id="timeoff_type"]' is not a valid XPath expression.
+  (Session info: chrome=116.0.5845.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D64A52A2+57122]
+	(No symbol) [0x00007FF6D641EA92]
+	(No symbol) [0x00007FF6D62EE3AB]
+	(No symbol) [0x00007FF6D62F2382]
+	(No symbol) [0x00007FF6D62F3D2F]
+	(No symbol) [0x00007FF6D62F3E20]
+	(No symbol) [0x00007FF6D63279B1]
+	(No symbol) [0x00007FF6D6327E2C]
+	(No symbol) [0x00007FF6D6360B97]
+	(No symbol) [0x00007FF6D634701F]
+	(No symbol) [0x00007FF6D635EB82]
+	(No symbol) [0x00007FF6D6346DB3]
+	(No symbol) [0x00007FF6D631D2B1]
+	(No symbol) [0x00007FF6D631E494]
+	GetHandleVerifier [0x00007FF6D674EF82+2849794]
+	GetHandleVerifier [0x00007FF6D67A1D24+3189156]
+	GetHandleVerifier [0x00007FF6D679ACAF+3160367]
+	GetHandleVerifier [0x00007FF6D6536D06+653702]
+	(No symbol) [0x00007FF6D642A208]
+	(No symbol) [0x00007FF6D64262C4]
+	(No symbol) [0x00007FF6D64263F6]
+	(No symbol) [0x00007FF6D64167A3]
+	BaseThreadInitThunk [0x00007FFDFA5526AD+29]
+	RtlUserThreadStart [0x00007FFDFB56AA68+40]
+</status>
+</test>
+<test id="s1-s1-s1-t5" name="TC5_Add_Time-off_Test_WFH" line="53">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="accordionSidebar"]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:17:08.640" level="INFO">Clicking element 'xpath://*[@id="accordionSidebar"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20230911 11:17:08.637" endtime="20230911 11:17:08.780"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="collapseTwo"]/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:17:08.784" level="INFO">Clicking element 'xpath://*[@id="collapseTwo"]/div/a[1]'.</msg>
+<status status="PASS" starttime="20230911 11:17:08.781" endtime="20230911 11:17:09.000"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 11:17:12.002" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 11:17:09.001" endtime="20230911 11:17:12.003"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath:////*[@id="timeoff_type"]</arg>
+<arg>WFH</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230911 11:17:12.012" level="INFO">Selecting options from selection list 'xpath:////*[@id="timeoff_type"]' by value WFH.</msg>
+<msg timestamp="20230911 11:17:12.297" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230911 11:17:12.297" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression ////*[@id="timeoff_type"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '////*[@id="timeoff_type"]' is not a valid XPath expression.
+  (Session info: chrome=116.0.5845.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D64A52A2+57122]
+	(No symbol) [0x00007FF6D641EA92]
+	(No symbol) [0x00007FF6D62EE3AB]
+	(No symbol) [0x00007FF6D62F2382]
+	(No symbol) [0x00007FF6D62F3D2F]
+	(No symbol) [0x00007FF6D62F3E20]
+	(No symbol) [0x00007FF6D63279B1]
+	(No symbol) [0x00007FF6D6327E2C]
+	(No symbol) [0x00007FF6D6360B97]
+	(No symbol) [0x00007FF6D634701F]
+	(No symbol) [0x00007FF6D635EB82]
+	(No symbol) [0x00007FF6D6346DB3]
+	(No symbol) [0x00007FF6D631D2B1]
+	(No symbol) [0x00007FF6D631E494]
+	GetHandleVerifier [0x00007FF6D674EF82+2849794]
+	GetHandleVerifier [0x00007FF6D67A1D24+3189156]
+	GetHandleVerifier [0x00007FF6D679ACAF+3160367]
+	GetHandleVerifier [0x00007FF6D6536D06+653702]
+	(No symbol) [0x00007FF6D642A208]
+	(No symbol) [0x00007FF6D64262C4]
+	(No symbol) [0x00007FF6D64263F6]
+	(No symbol) [0x00007FF6D64167A3]
+	BaseThreadInitThunk [0x00007FFDFA5526AD+29]
+	RtlUserThreadStart [0x00007FFDFB56AA68+40]
+</msg>
+<status status="FAIL" starttime="20230911 11:17:12.008" endtime="20230911 11:17:12.300"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:12.301" endtime="20230911 11:17:12.301"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Dates"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:12.302" endtime="20230911 11:17:12.302"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="page-top"]/div[3]/div[1]/table/tbody/tr[3]/td[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:12.302" endtime="20230911 11:17:12.302"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:12.303" endtime="20230911 11:17:12.303"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="subject"]</arg>
+<arg>WFH</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:12.304" endtime="20230911 11:17:12.304"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="Description"]</arg>
+<arg>Work from Home</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:12.304" endtime="20230911 11:17:12.304"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:12.305" endtime="20230911 11:17:12.305"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="content"]/div/div[2]/div/form/div/div[5]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:12.305" endtime="20230911 11:17:12.306"/>
+</kw>
+<status status="FAIL" starttime="20230911 11:17:08.633" endtime="20230911 11:17:12.306">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression ////*[@id="timeoff_type"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '////*[@id="timeoff_type"]' is not a valid XPath expression.
+  (Session info: chrome=116.0.5845.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D64A52A2+57122]
+	(No symbol) [0x00007FF6D641EA92]
+	(No symbol) [0x00007FF6D62EE3AB]
+	(No symbol) [0x00007FF6D62F2382]
+	(No symbol) [0x00007FF6D62F3D2F]
+	(No symbol) [0x00007FF6D62F3E20]
+	(No symbol) [0x00007FF6D63279B1]
+	(No symbol) [0x00007FF6D6327E2C]
+	(No symbol) [0x00007FF6D6360B97]
+	(No symbol) [0x00007FF6D634701F]
+	(No symbol) [0x00007FF6D635EB82]
+	(No symbol) [0x00007FF6D6346DB3]
+	(No symbol) [0x00007FF6D631D2B1]
+	(No symbol) [0x00007FF6D631E494]
+	GetHandleVerifier [0x00007FF6D674EF82+2849794]
+	GetHandleVerifier [0x00007FF6D67A1D24+3189156]
+	GetHandleVerifier [0x00007FF6D679ACAF+3160367]
+	GetHandleVerifier [0x00007FF6D6536D06+653702]
+	(No symbol) [0x00007FF6D642A208]
+	(No symbol) [0x00007FF6D64262C4]
+	(No symbol) [0x00007FF6D64263F6]
+	(No symbol) [0x00007FF6D64167A3]
+	BaseThreadInitThunk [0x00007FFDFA5526AD+29]
+	RtlUserThreadStart [0x00007FFDFB56AA68+40]
+</status>
+</test>
+<test id="s1-s1-s1-t6" name="TC6_Add_Time-off_Test_LOP" line="67">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="accordionSidebar"]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:17:12.313" level="INFO">Clicking element 'xpath://*[@id="accordionSidebar"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20230911 11:17:12.311" endtime="20230911 11:17:12.353"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="collapseTwo"]/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230911 11:17:12.354" level="INFO">Clicking element 'xpath://*[@id="collapseTwo"]/div/a[1]'.</msg>
+<status status="PASS" starttime="20230911 11:17:12.354" endtime="20230911 11:17:12.469"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230911 11:17:15.471" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230911 11:17:12.470" endtime="20230911 11:17:15.474"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath:////*[@id="timeoff_type"]</arg>
+<arg>LOP</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230911 11:17:15.480" level="INFO">Selecting options from selection list 'xpath:////*[@id="timeoff_type"]' by value LOP.</msg>
+<msg timestamp="20230911 11:17:15.777" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230911 11:17:15.777" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression ////*[@id="timeoff_type"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '////*[@id="timeoff_type"]' is not a valid XPath expression.
+  (Session info: chrome=116.0.5845.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D64A52A2+57122]
+	(No symbol) [0x00007FF6D641EA92]
+	(No symbol) [0x00007FF6D62EE3AB]
+	(No symbol) [0x00007FF6D62F2382]
+	(No symbol) [0x00007FF6D62F3D2F]
+	(No symbol) [0x00007FF6D62F3E20]
+	(No symbol) [0x00007FF6D63279B1]
+	(No symbol) [0x00007FF6D6327E2C]
+	(No symbol) [0x00007FF6D6360B97]
+	(No symbol) [0x00007FF6D634701F]
+	(No symbol) [0x00007FF6D635EB82]
+	(No symbol) [0x00007FF6D6346DB3]
+	(No symbol) [0x00007FF6D631D2B1]
+	(No symbol) [0x00007FF6D631E494]
+	GetHandleVerifier [0x00007FF6D674EF82+2849794]
+	GetHandleVerifier [0x00007FF6D67A1D24+3189156]
+	GetHandleVerifier [0x00007FF6D679ACAF+3160367]
+	GetHandleVerifier [0x00007FF6D6536D06+653702]
+	(No symbol) [0x00007FF6D642A208]
+	(No symbol) [0x00007FF6D64262C4]
+	(No symbol) [0x00007FF6D64263F6]
+	(No symbol) [0x00007FF6D64167A3]
+	BaseThreadInitThunk [0x00007FFDFA5526AD+29]
+	RtlUserThreadStart [0x00007FFDFB56AA68+40]
+</msg>
+<status status="FAIL" starttime="20230911 11:17:15.477" endtime="20230911 11:17:15.783"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:15.784" endtime="20230911 11:17:15.784"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Dates"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:15.785" endtime="20230911 11:17:15.786"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="page-top"]/div[3]/div[1]/table/tbody/tr[3]/td[5]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:15.786" endtime="20230911 11:17:15.787"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:15.788" endtime="20230911 11:17:15.789"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="subject"]</arg>
+<arg>LOP</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:15.790" endtime="20230911 11:17:15.791"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="Description"]</arg>
+<arg>Loss of Pay</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:15.792" endtime="20230911 11:17:15.792"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:15.793" endtime="20230911 11:17:15.793"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="content"]/div/div[2]/div/form/div/div[5]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 11:17:15.794" endtime="20230911 11:17:15.794"/>
+</kw>
+<status status="FAIL" starttime="20230911 11:17:12.311" endtime="20230911 11:17:15.795">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression ////*[@id="timeoff_type"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '////*[@id="timeoff_type"]' is not a valid XPath expression.
+  (Session info: chrome=116.0.5845.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D64A52A2+57122]
+	(No symbol) [0x00007FF6D641EA92]
+	(No symbol) [0x00007FF6D62EE3AB]
+	(No symbol) [0x00007FF6D62F2382]
+	(No symbol) [0x00007FF6D62F3D2F]
+	(No symbol) [0x00007FF6D62F3E20]
+	(No symbol) [0x00007FF6D63279B1]
+	(No symbol) [0x00007FF6D6327E2C]
+	(No symbol) [0x00007FF6D6360B97]
+	(No symbol) [0x00007FF6D634701F]
+	(No symbol) [0x00007FF6D635EB82]
+	(No symbol) [0x00007FF6D6346DB3]
+	(No symbol) [0x00007FF6D631D2B1]
+	(No symbol) [0x00007FF6D631E494]
+	GetHandleVerifier [0x00007FF6D674EF82+2849794]
+	GetHandleVerifier [0x00007FF6D67A1D24+3189156]
+	GetHandleVerifier [0x00007FF6D679ACAF+3160367]
+	GetHandleVerifier [0x00007FF6D6536D06+653702]
+	(No symbol) [0x00007FF6D642A208]
+	(No symbol) [0x00007FF6D64262C4]
+	(No symbol) [0x00007FF6D64263F6]
+	(No symbol) [0x00007FF6D64167A3]
+	BaseThreadInitThunk [0x00007FFDFA5526AD+29]
+	RtlUserThreadStart [0x00007FFDFB56AA68+40]
+</status>
+</test>
+<test id="s1-s1-s1-t7" name="TC7_Close_Window" line="81">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230911 11:17:15.805" endtime="20230911 11:17:18.179"/>
+</kw>
+<status status="PASS" starttime="20230911 11:17:15.803" endtime="20230911 11:17:18.181"/>
+</test>
+<status status="FAIL" starttime="20230911 11:16:38.968" endtime="20230911 11:17:18.189"/>
+</suite>
+<status status="FAIL" starttime="20230911 11:16:38.964" endtime="20230911 11:17:18.207"/>
+</suite>
+<status status="FAIL" starttime="20230911 11:16:38.913" endtime="20230911 11:17:18.220"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="3" skip="0" id="s1" name="Automation project">Automation project</stat>
+<stat pass="4" fail="3" skip="0" id="s1-s1" name="Testcases">Automation project.Testcases</stat>
+<stat pass="4" fail="3" skip="0" id="s1-s1-s1" name="TC3 Time-off">Automation project.Testcases.TC3 Time-off</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
